@@ -27,7 +27,7 @@ Trace(string message)
 Warning(string message)
 ```
 
-It is very it to use. Just set the absolute path (including filename) to the LogFile property call the appropriate log method desired.
+It is very it to use. Just set the absolute path (including filename) to the LogFile property call the appropriate log method desired. Change the LogRollsize and LogLevel as desired.
 
 ## Extension
 RollLogFile is a part of the interface and marked virtual on the Logger so that you can override its behavior if you so desire. You do not have to call RollLogFile yourself in code. The API will call it when writing to the log file.
