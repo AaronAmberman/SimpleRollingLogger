@@ -13,6 +13,7 @@
     <PackageTags>Logger, Simple Logger, Rolling Logs, Log File, Logging</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Aaron Amberman</Authors>
   </PropertyGroup>
 
   <ItemGroup>
