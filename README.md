@@ -31,3 +31,5 @@ It is very it to use. Just set the absolute path (including filename) to the Log
 
 ## Extension
 RollLogFile is a part of the interface and marked virtual on the Logger so that you can override its behavior if you so desire. You do not have to call RollLogFile yourself in code. The API will call it when writing to the log file.
+
+There is another method call WriteToLofFile that is protected virtual so that if you extend the type so can also modify the actual file writing routine.
