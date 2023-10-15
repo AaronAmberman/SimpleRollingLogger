@@ -2,7 +2,7 @@
 A simple lightweight logger with rolling log files.
 
 ## Breakdown
-Logger implements ILogger and has 3 **properties**...
+***Logger*** implements ***ILogger*** and has 3 **properties**...
 
 ```C#
 /// <summary>Gets or sets the log file.</summary>
