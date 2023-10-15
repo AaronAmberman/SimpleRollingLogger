@@ -18,13 +18,15 @@ public LogLevel LogLevel { get; set; } = LogLevel.Trace;
 It has these methods...
 
 ```C#
-Debug(string message)
-Error(string message)
-Fatal(string message)
-Info(string message)
-RollLogFile()
-Trace(string message)
-Warning(string message)
+public void Debug(string message)
+protected void EnsureLogFile()
+public void Error(string message)
+public void Fatal(string message)
+public void Info(string message)
+public virtual bool RollLogFile()
+public void Trace(string message)
+public void Warning(string message)
+protected virtual void WriteToLogFile(LogLevel level, string message)
 ```
 
 It is very it to use. Just set the absolute path (including filename) to the LogFile property call the appropriate log method desired. Change the LogRollsize and LogLevel as desired.
