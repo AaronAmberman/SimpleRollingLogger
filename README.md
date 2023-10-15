@@ -2,7 +2,7 @@
 A simple lightweight logger with rolling log files.
 
 ## Breakdown
-***Logger*** implements ***ILogger*** and has 3 **properties**...
+***Logger*** implements ***ILogger*** and has 3 properties...
 
 ```C#
 /// <summary>Gets or sets the log file.</summary>
@@ -29,9 +29,9 @@ public void Warning(string message)
 protected virtual void WriteToLogFile(LogLevel level, string message)
 ```
 
-It is very it to use. Just set the absolute path (including filename) to the LogFile property call the appropriate log method desired. Change the LogRollsize and LogLevel as desired.
+It is very it to use. Just set the absolute path (including filename) to the **LogFile** property call the appropriate log method desired. Change the **LogRollsize** and **LogLevel** as desired.
 
 ## Extension
-RollLogFile is a part of the interface and marked *virtual* on the Logger so that you can override its behavior if you so desire. You do not have to call RollLogFile yourself in code. The API will call it when writing to the log file.
+***RollLogFile*** is a part of the interface and marked *virtual* on the ***Logger*** so that you can override its behavior if you so desire. You do not have to call ***RollLogFile*** yourself in code. The API will call it when writing to the log file.
 
-There is another method call ***WriteToLogFile*** that is **protected** *virtual* so that if you extend the type so can also modify the actual file writing routine. Debug, Error, Fatal, Info, Trace and Warning all just call that method to actually write the data to the file. If overridding the ***WriteToLogFile*** method be sure to call ***EnsureLogFile*** prior to writing to the file. This is the APIs defense to no log file being set on the **LogFile** property.
+There is another method call ***WriteToLogFile*** that is protected *virtual* so that if you extend the type so can also modify the actual file writing routine. ***Debug, Error, Fatal, Info, Trace*** and ***Warning*** all just call that method to actually write the data to the file. If overridding the ***WriteToLogFile*** method be sure to call ***EnsureLogFile*** prior to writing to the file. This is the APIs defense to no log file being set on the **LogFile** property.
