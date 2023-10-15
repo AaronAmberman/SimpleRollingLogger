@@ -10,10 +10,11 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/AaronAmberman/SimpleRollingLogger</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Logger, Simple Logger, Rolling Logs, Log File, Logging</PackageTags>
+    <PackageTags>Logger;Simple Logger;Rolling Logs;Log File;Logging</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Aaron Amberman</Authors>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
